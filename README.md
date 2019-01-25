@@ -1,2 +1,2 @@
-# IT2100-iOS-App-Programming
+# IT2100-JZdanowicz
 For iOS Development
