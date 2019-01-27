@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C09E4D721FE60A500290F61 /* Test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C09E4D621FE60A500290F61 /* Test.wav */; };
 		4CB4E8AC21FACF1E004C6DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4E8AB21FACF1E004C6DB9 /* AppDelegate.swift */; };
 		4CB4E8AE21FACF1E004C6DB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4E8AD21FACF1E004C6DB9 /* ViewController.swift */; };
 		4CB4E8B121FACF1E004C6DB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB4E8AF21FACF1E004C6DB9 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C09E4D621FE60A500290F61 /* Test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Test.wav; sourceTree = "<group>"; };
 		4CB4E8A821FACF1E004C6DB9 /* Lab02JZdanowicz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab02JZdanowicz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB4E8AB21FACF1E004C6DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB4E8AD21FACF1E004C6DB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +56,13 @@
 		4CB4E8AA21FACF1E004C6DB9 /* Lab02JZdanowicz */ = {
 			isa = PBXGroup;
 			children = (
+				4CB4E8B721FACF1F004C6DB9 /* Info.plist */,
 				4CB4E8AB21FACF1E004C6DB9 /* AppDelegate.swift */,
 				4CB4E8AD21FACF1E004C6DB9 /* ViewController.swift */,
-				4CB4E8AF21FACF1E004C6DB9 /* Main.storyboard */,
+				4C09E4D621FE60A500290F61 /* Test.wav */,
 				4CB4E8B221FACF1F004C6DB9 /* Assets.xcassets */,
 				4CB4E8B421FACF1F004C6DB9 /* LaunchScreen.storyboard */,
-				4CB4E8B721FACF1F004C6DB9 /* Info.plist */,
+				4CB4E8AF21FACF1E004C6DB9 /* Main.storyboard */,
 			);
 			path = Lab02JZdanowicz;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C09E4D721FE60A500290F61 /* Test.wav in Resources */,
 				4CB4E8B621FACF1F004C6DB9 /* LaunchScreen.storyboard in Resources */,
 				4CB4E8B321FACF1F004C6DB9 /* Assets.xcassets in Resources */,
 				4CB4E8B121FACF1E004C6DB9 /* Main.storyboard in Resources */,
