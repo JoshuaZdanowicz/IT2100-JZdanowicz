@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
        var myMessage: UILabel
         myMessage=UILabel(frame:CGRect(x: 30.0, y: 50.0, width: 300.0, height: 50.0))
         myMessage.font=UIFont.systemFont(ofSize:48.0)

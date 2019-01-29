@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		4C09E4D721FE60A500290F61 /* Test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C09E4D621FE60A500290F61 /* Test.wav */; };
+		4C0D4AA621FFF87D00AC7587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0D4AA521FFF87D00AC7587 /* Assets.xcassets */; };
 		4CB4E8AC21FACF1E004C6DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4E8AB21FACF1E004C6DB9 /* AppDelegate.swift */; };
 		4CB4E8AE21FACF1E004C6DB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4E8AD21FACF1E004C6DB9 /* ViewController.swift */; };
 		4CB4E8B121FACF1E004C6DB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB4E8AF21FACF1E004C6DB9 /* Main.storyboard */; };
-		4CB4E8B321FACF1F004C6DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB4E8B221FACF1F004C6DB9 /* Assets.xcassets */; };
 		4CB4E8B621FACF1F004C6DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB4E8B421FACF1F004C6DB9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C09E4D621FE60A500290F61 /* Test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Test.wav; sourceTree = "<group>"; };
+		4C0D4AA521FFF87D00AC7587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB4E8A821FACF1E004C6DB9 /* Lab02JZdanowicz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab02JZdanowicz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB4E8AB21FACF1E004C6DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB4E8AD21FACF1E004C6DB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CB4E8B021FACF1E004C6DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4CB4E8B221FACF1F004C6DB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB4E8B521FACF1F004C6DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CB4E8B721FACF1F004C6DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +60,7 @@
 				4CB4E8AB21FACF1E004C6DB9 /* AppDelegate.swift */,
 				4CB4E8AD21FACF1E004C6DB9 /* ViewController.swift */,
 				4C09E4D621FE60A500290F61 /* Test.wav */,
-				4CB4E8B221FACF1F004C6DB9 /* Assets.xcassets */,
+				4C0D4AA521FFF87D00AC7587 /* Assets.xcassets */,
 				4CB4E8B421FACF1F004C6DB9 /* LaunchScreen.storyboard */,
 				4CB4E8AF21FACF1E004C6DB9 /* Main.storyboard */,
 			);
@@ -127,8 +127,8 @@
 			files = (
 				4C09E4D721FE60A500290F61 /* Test.wav in Resources */,
 				4CB4E8B621FACF1F004C6DB9 /* LaunchScreen.storyboard in Resources */,
-				4CB4E8B321FACF1F004C6DB9 /* Assets.xcassets in Resources */,
 				4CB4E8B121FACF1E004C6DB9 /* Main.storyboard in Resources */,
+				4C0D4AA621FFF87D00AC7587 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tri-c.Lab02JZdanowicz";
+				PRODUCT_BUNDLE_IDENTIFIER = JosshuaZdanowicz.Lab02JZdanowicz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,7 +311,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tri-c.Lab02JZdanowicz";
+				PRODUCT_BUNDLE_IDENTIFIER = JosshuaZdanowicz.Lab02JZdanowicz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
