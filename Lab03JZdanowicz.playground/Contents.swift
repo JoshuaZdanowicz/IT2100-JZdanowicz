@@ -172,7 +172,7 @@ func combineAll(numbers: [Int], starter: String) -> String {
     return numbersCombined }
 print(combineAll(numbers: [9, 8, 7], starter: "Combined"))
 
-// I assumed you were looking for a string of names as opposed to numbers so that is what I did, working off the numbers example above.                                                                                                                      //
+// I assumed you were looking for a string of names as opposed to numbers so that is what I did, working off the numbers example which I left in.                                                                                                                      //
 
 func concatAll(names: [String], starter: String) -> String {
     var namesCombined = starter + ": "
