@@ -1,5 +1,6 @@
 import UIKit
 //Lab 03
+var str = "Hello, Josh"
 
 
 var pi1: Int = 22/7 // Pi shows as 3 because int leaves off all but the whole number of the value.
@@ -21,10 +22,8 @@ var pi3: Double = 22/7 // Pi shows as 3.142857142857143
  cases, where memory size doesn't matter Double is prefered.*/
 
 print("Pi As:","Int",pi1,"Float", pi2,"Double", pi3)
-//                                                                                                                     //
 
-var str = "Hello, Josh"
-
+// I left everything for this section based off the edited example you sent me in that email. Seeing it helped me understand things//                                                                                                                  //
 
 class Counter {
     
@@ -143,6 +142,7 @@ class Counter {
     }
     
 }
+
 var counter = Counter()
 
 counter.count = 10
@@ -164,7 +164,6 @@ counter.increment(byAmount: 20)
 
 counter.display()
 
-//                                                                                                                     //
 
 func combineAll(numbers: [Int], starter: String) -> String {
     var numbersCombined = starter + ": "
@@ -173,12 +172,17 @@ func combineAll(numbers: [Int], starter: String) -> String {
     return numbersCombined }
 print(combineAll(numbers: [9, 8, 7], starter: "Combined"))
 
+// I assumed you were looking for a string of names as opposed to numbers so that is what I did, working off the numbers example above.                                                                                                                      //
+
 func concatAll(names: [String], starter: String) -> String {
     var namesCombined = starter + ": "
     for name in names {
         namesCombined = namesCombined + String(name) + " " }
     return namesCombined }
 print(concatAll(names: ["Jim", "Matt", "Josh", "Jess"], starter: "Combined"))
-    
+
+/* I studdied what you sent me for hours and feel like I have a better understanding of the concepts and implementting them. I left the
+middle section as is pasting it into this file. I decided not to over think the last section like I did the middle, hopefully I did it 
+properly. 
 
 
