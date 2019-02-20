@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C163DCB2217240D0081407D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C163DCA2217240D0081407D /* AppDelegate.swift */; };
-		4C163DCD2217240D0081407D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C163DCC2217240D0081407D /* ViewController.swift */; };
-		4C163DD02217240D0081407D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C163DCE2217240D0081407D /* Main.storyboard */; };
-		4C163DD2221724100081407D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C163DD1221724100081407D /* Assets.xcassets */; };
-		4C163DD5221724100081407D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C163DD3221724100081407D /* LaunchScreen.storyboard */; };
+		4C163E07221CB0420081407D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C163E06221CB0420081407D /* AppDelegate.swift */; };
+		4C163E09221CB0420081407D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C163E08221CB0420081407D /* ViewController.swift */; };
+		4C163E0C221CB0420081407D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C163E0A221CB0420081407D /* Main.storyboard */; };
+		4C163E0E221CB0430081407D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C163E0D221CB0430081407D /* Assets.xcassets */; };
+		4C163E11221CB0430081407D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C163E0F221CB0430081407D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C163DC72217240D0081407D /* Lab05 Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab05 Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C163DCA2217240D0081407D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C163DCC2217240D0081407D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C163DCF2217240D0081407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C163DD1221724100081407D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C163DD4221724100081407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4C163DD6221724100081407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C163E03221CB0420081407D /* Lab05 Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab05 Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C163E06221CB0420081407D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C163E08221CB0420081407D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C163E0B221CB0420081407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C163E0D221CB0430081407D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C163E10221CB0430081407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C163E12221CB0430081407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C163DC42217240D0081407D /* Frameworks */ = {
+		4C163E00221CB0420081407D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,31 +35,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C163DBE2217240D0081407D = {
+		4C163DFA221CB0420081407D = {
 			isa = PBXGroup;
 			children = (
-				4C163DC92217240D0081407D /* Lab05 Calculator */,
-				4C163DC82217240D0081407D /* Products */,
+				4C163E05221CB0420081407D /* Lab05 Calculator */,
+				4C163E04221CB0420081407D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4C163DC82217240D0081407D /* Products */ = {
+		4C163E04221CB0420081407D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C163DC72217240D0081407D /* Lab05 Calculator.app */,
+				4C163E03221CB0420081407D /* Lab05 Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C163DC92217240D0081407D /* Lab05 Calculator */ = {
+		4C163E05221CB0420081407D /* Lab05 Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				4C163DCA2217240D0081407D /* AppDelegate.swift */,
-				4C163DCC2217240D0081407D /* ViewController.swift */,
-				4C163DCE2217240D0081407D /* Main.storyboard */,
-				4C163DD1221724100081407D /* Assets.xcassets */,
-				4C163DD3221724100081407D /* LaunchScreen.storyboard */,
-				4C163DD6221724100081407D /* Info.plist */,
+				4C163E06221CB0420081407D /* AppDelegate.swift */,
+				4C163E08221CB0420081407D /* ViewController.swift */,
+				4C163E0A221CB0420081407D /* Main.storyboard */,
+				4C163E0D221CB0430081407D /* Assets.xcassets */,
+				4C163E0F221CB0430081407D /* LaunchScreen.storyboard */,
+				4C163E12221CB0430081407D /* Info.plist */,
 			);
 			path = "Lab05 Calculator";
 			sourceTree = "<group>";
@@ -67,39 +67,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C163DC62217240D0081407D /* Lab05 Calculator */ = {
+		4C163E02221CB0420081407D /* Lab05 Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C163DD9221724100081407D /* Build configuration list for PBXNativeTarget "Lab05 Calculator" */;
+			buildConfigurationList = 4C163E15221CB0430081407D /* Build configuration list for PBXNativeTarget "Lab05 Calculator" */;
 			buildPhases = (
-				4C163DC32217240D0081407D /* Sources */,
-				4C163DC42217240D0081407D /* Frameworks */,
-				4C163DC52217240D0081407D /* Resources */,
+				4C163DFF221CB0420081407D /* Sources */,
+				4C163E00221CB0420081407D /* Frameworks */,
+				4C163E01221CB0420081407D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Lab05 Calculator";
-			productName = "Lab05 Calculator";
-			productReference = 4C163DC72217240D0081407D /* Lab05 Calculator.app */;
+			productName = Lab05Calculator;
+			productReference = 4C163E03221CB0420081407D /* Lab05 Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4C163DBF2217240D0081407D /* Project object */ = {
+		4C163DFB221CB0420081407D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Joshua Zdanowicz";
 				TargetAttributes = {
-					4C163DC62217240D0081407D = {
+					4C163E02221CB0420081407D = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 4C163DC22217240D0081407D /* Build configuration list for PBXProject "Lab05 Calculator" */;
+			buildConfigurationList = 4C163DFE221CB0420081407D /* Build configuration list for PBXProject "Lab05 Calculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 4C163DBE2217240D0081407D;
-			productRefGroup = 4C163DC82217240D0081407D /* Products */;
+			mainGroup = 4C163DFA221CB0420081407D;
+			productRefGroup = 4C163E04221CB0420081407D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C163DC62217240D0081407D /* Lab05 Calculator */,
+				4C163E02221CB0420081407D /* Lab05 Calculator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C163DC52217240D0081407D /* Resources */ = {
+		4C163E01221CB0420081407D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C163DD5221724100081407D /* LaunchScreen.storyboard in Resources */,
-				4C163DD2221724100081407D /* Assets.xcassets in Resources */,
-				4C163DD02217240D0081407D /* Main.storyboard in Resources */,
+				4C163E11221CB0430081407D /* LaunchScreen.storyboard in Resources */,
+				4C163E0E221CB0430081407D /* Assets.xcassets in Resources */,
+				4C163E0C221CB0420081407D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C163DC32217240D0081407D /* Sources */ = {
+		4C163DFF221CB0420081407D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C163DCD2217240D0081407D /* ViewController.swift in Sources */,
-				4C163DCB2217240D0081407D /* AppDelegate.swift in Sources */,
+				4C163E09221CB0420081407D /* ViewController.swift in Sources */,
+				4C163E07221CB0420081407D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4C163DCE2217240D0081407D /* Main.storyboard */ = {
+		4C163E0A221CB0420081407D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C163DCF2217240D0081407D /* Base */,
+				4C163E0B221CB0420081407D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4C163DD3221724100081407D /* LaunchScreen.storyboard */ = {
+		4C163E0F221CB0430081407D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C163DD4221724100081407D /* Base */,
+				4C163E10221CB0430081407D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4C163DD7221724100081407D /* Debug */ = {
+		4C163E13221CB0430081407D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		4C163DD8221724100081407D /* Release */ = {
+		4C163E14221CB0430081407D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,36 +278,36 @@
 			};
 			name = Release;
 		};
-		4C163DDA221724100081407D /* Debug */ = {
+		4C163E16221CB0430081407D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5LMQ4K8UD;
-				INFOPLIST_FILE = "Lab05 Calculator/Info.plist";
+				INFOPLIST_FILE = Lab05Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tri-c.Lab05-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "tri-c.Lab05Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4C163DDB221724100081407D /* Release */ = {
+		4C163E17221CB0430081407D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5LMQ4K8UD;
-				INFOPLIST_FILE = "Lab05 Calculator/Info.plist";
+				INFOPLIST_FILE = Lab05Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tri-c.Lab05-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "tri-c.Lab05Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C163DC22217240D0081407D /* Build configuration list for PBXProject "Lab05 Calculator" */ = {
+		4C163DFE221CB0420081407D /* Build configuration list for PBXProject "Lab05 Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C163DD7221724100081407D /* Debug */,
-				4C163DD8221724100081407D /* Release */,
+				4C163E13221CB0430081407D /* Debug */,
+				4C163E14221CB0430081407D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C163DD9221724100081407D /* Build configuration list for PBXNativeTarget "Lab05 Calculator" */ = {
+		4C163E15221CB0430081407D /* Build configuration list for PBXNativeTarget "Lab05 Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C163DDA221724100081407D /* Debug */,
-				4C163DDB221724100081407D /* Release */,
+				4C163E16221CB0430081407D /* Debug */,
+				4C163E17221CB0430081407D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4C163DBF2217240D0081407D /* Project object */;
+	rootObject = 4C163DFB221CB0420081407D /* Project object */;
 }

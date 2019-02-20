@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Lab05 Calculator
+//  Lab05Calculator
 //
-//  Created by Joshua Zdanowicz on 2/15/19.
+//  Created by Joshua Zdanowicz on 2/19/19.
 //  Copyright © 2019 Joshua Zdanowicz. All rights reserved.
 //
 
