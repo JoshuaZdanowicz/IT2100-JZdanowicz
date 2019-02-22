@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var FindInput: UITextField!
+    @IBOutlet weak var ReplaceInput: UITextField!
+    @IBOutlet weak var TextInput: UITextView!
+    
+    
+    @IBOutlet weak var UpdateText: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
