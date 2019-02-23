@@ -15,7 +15,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var TextInput: UITextView!
     
     
-    @IBOutlet weak var UpdateText: UIButton!
+    
+    @IBAction func UpdateText(_ sender: UIButton) {
+        TextInput.text=FindInput.text!
+        
+        TextInput.text=ReplaceInput.text!
+        
+        
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

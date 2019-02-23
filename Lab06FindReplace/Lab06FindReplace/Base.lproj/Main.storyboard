@@ -60,6 +60,9 @@
                                 <state key="normal" title="Find/Replace" backgroundImage="blueButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="UpdateText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztR-vI-9gH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -69,7 +72,6 @@
                         <outlet property="FindInput" destination="QvH-8Q-x9K" id="Ejc-Yy-HWS"/>
                         <outlet property="ReplaceInput" destination="X1E-UQ-1dc" id="cfL-Dr-kN9"/>
                         <outlet property="TextInput" destination="rsU-3s-60T" id="Sxr-K1-938"/>
-                        <outlet property="UpdateText" destination="FWD-5d-BsJ" id="tLM-gb-SQD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
