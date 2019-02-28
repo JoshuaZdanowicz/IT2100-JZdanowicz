@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var inputLast: UITextField!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
+        NSLog("button pressed!")
+        NSLog(inputFirst.text ?? "")
+        NSLog(inputLast.text ?? "")
+        fullName.text = "\(inputFirst.text ?? "") \(inputLast.text ?? "")"
     }
     
     
