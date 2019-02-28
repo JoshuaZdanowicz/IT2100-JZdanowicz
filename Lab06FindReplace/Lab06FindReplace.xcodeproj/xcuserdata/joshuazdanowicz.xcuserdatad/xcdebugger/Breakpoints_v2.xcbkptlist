@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab06FindReplace/ViewController.swift"
+            timestampString = "573068408.319739"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lab06FindReplace.ViewController.ReplaceInput.getter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Lab06FindReplace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuazdanowicz/Documents/GitHub/IT2100-JZdanowicz/Lab06FindReplace/Lab06FindReplace/ViewController.swift"
+                  timestampString = "573065909.704864"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lab06FindReplace.ViewController.ReplaceInput.setter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Lab06FindReplace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuazdanowicz/Documents/GitHub/IT2100-JZdanowicz/Lab06FindReplace/Lab06FindReplace/ViewController.swift"
+                  timestampString = "573065909.719805"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lab06FindReplace.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Lab06FindReplace.ViewController"
+                  moduleName = "Lab06FindReplace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuazdanowicz/Documents/GitHub/IT2100-JZdanowicz/Lab06FindReplace/Lab06FindReplace/ViewController.swift"
+                  timestampString = "573065909.725044"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "183">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lab06FindReplace.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Lab06FindReplace.ViewController&gt;"
+                  moduleName = "Lab06FindReplace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuazdanowicz/Documents/GitHub/IT2100-JZdanowicz/Lab06FindReplace/Lab06FindReplace/ViewController.swift"
+                  timestampString = "573065909.731477"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "145">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
