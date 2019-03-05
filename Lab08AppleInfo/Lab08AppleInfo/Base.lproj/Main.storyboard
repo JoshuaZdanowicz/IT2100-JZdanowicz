@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab08AppleInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4U8-rS-GZP">
+                                <rect key="frame" x="32" y="62" width="215" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4U8-rS-GZP" secondAttribute="height" multiplier="215:28" id="UkD-My-2by"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Appe"/>
+                                    <segment title="iOS"/>
+                                    <segment title="Xcode"/>
+                                    <segment title="Swift"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeAppleLink:" destination="BYZ-38-t0r" eventType="valueChanged" id="29v-2E-6LY"/>
+                                </connections>
+                            </segmentedControl>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jh0-qK-VWB">
+                                <rect key="frame" x="16" y="98" width="343" height="1013"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1013" id="33c-gx-ORv"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkr-CY-upt">
+                                <rect key="frame" x="32" y="33" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pkr-CY-upt" secondAttribute="trailing" constant="201" id="2ST-do-CbS"/>
+                            <constraint firstItem="4U8-rS-GZP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="62" id="5vl-m5-fev"/>
+                            <constraint firstItem="jh0-qK-VWB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dh3-4c-S7r"/>
+                            <constraint firstItem="4U8-rS-GZP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Gl7-kc-cMM"/>
+                            <constraint firstItem="4U8-rS-GZP" firstAttribute="top" secondItem="Pkr-CY-upt" secondAttribute="bottom" constant="8" symbolic="YES" id="Vzj-TR-TnJ"/>
+                            <constraint firstItem="4U8-rS-GZP" firstAttribute="leading" secondItem="Pkr-CY-upt" secondAttribute="leading" id="brm-gY-Bpo"/>
+                            <constraint firstItem="jh0-qK-VWB" firstAttribute="top" secondItem="4U8-rS-GZP" secondAttribute="bottom" constant="8" symbolic="YES" id="ssJ-QT-E2c"/>
+                            <constraint firstItem="jh0-qK-VWB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zhF-QJ-6Is"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="appleLink" destination="4U8-rS-GZP" id="ynY-uv-XlI"/>
+                        <outlet property="webApple" destination="jh0-qK-VWB" id="evL-g2-CQx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-1767.1664167916044"/>
+        </scene>
+    </scenes>
+</document>
