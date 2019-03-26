@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Lab09JZdanowicz
-//
-//  Created by Joshua Zdanowicz on 3/21/19.
-//  Copyright © 2019 Joshua Zdanowicz. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -19,32 +11,100 @@ class ViewController: UIViewController {
     var emailStr: String?
     var nameTextField: UITextField?
     var emailTextField: UITextField?
-
+    
     
     
     
     @IBAction func showAltertWithFields(_ sender: Any) {
+        let alert = UIAlertController(title: "Enter Name and Email",
+                                      message: "Using textFilds for input",
+                                      preferredStyle: UIAlertController.Style.alert)
+        alert.addTextField(configurationHandler: {(textField: UITextField) in
+            textField.placeholder = "Enter Name"
+            textField.keyboardType=UIKeyboardType.alphabet
+        })
+        alert.addTextField(configurationHandler: {(textField: UITextField) in
+            textField.placeholder = "Enter Email Address"
+            textField.keyboardType=UIKeyboardType.emailAddress
+        })
         
-        let alert = UIAlertController(title: "Enter Name and Email", message: "name and email address required.", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "Ok",
+                                          style: UIAlertAction.Style.default,
+                                          handler: {( alertAction: UIAlertAction) in
+                                            let userName = alert.textFields![0].text
+                                            let userEmail = alert.textFields![1].text
+                                            
+                                            self.userName.text = userName
+                                            self.userEmail.text = userEmail
+                                            
+        })
+        alert.addAction(defaultAction)
+        present(alert, animated: true, completion:nil)
         
-        present(alert, animated: true, completion: nil)
     }
+    
+    @IBAction func showAlertWithOptions(_ sender: Any) {
+        let alertController = UIAlertController(title: "Select Your Favorite Language",
+                                                message: "Pick One!",
+                                                preferredStyle: UIAlertController.Style.alert)
         
-     @IBAction func showAlertWithOptions(_ sender: Any) {
+        let cSharp = UIAlertAction(title: "C#",
+                                   style: UIAlertAction.Style.default,
+                                   handler: {(alertAction: UIAlertAction) in
+                                    //let favoriteLanguage = "C#"
+                                    self.favoriteLanguage.text="Selected C#"
+        })
+        let Java = UIAlertAction(title: "Java",
+                                 style: UIAlertAction.Style.default,
+                                 handler: {(alertAction: UIAlertAction) in
+                                    //let favoriteLanguage = "Java"
+                                    self.favoriteLanguage.text="Selected Java"
+        })
         
-        let alert = UIAlertController(title: "Select Language  ", message: "Please pick a programming language .",
-            preferredStyle: .alert)
-
-        present(alert, animated: true, completion: nil)
-        }
-
+        let Swift = UIAlertAction(title: "Swift",
+                                  style: UIAlertAction.Style.default,
+                                  handler: {(alertAction: UIAlertAction) in
+                                    //let favoriteLanguage = "Swift"
+                                    self.favoriteLanguage.text="Selected Swift"
+        })
+        
+        alertController.addAction(cSharp)
+        alertController.addAction(Java)
+        alertController.addAction(Swift)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func showActionSheet(_ sender: Any) {
+        let alertController = UIAlertController(title: "Available Actions",
+                                                message: "Choose something from this list",
+                                                preferredStyle: UIAlertController.Style.actionSheet)
         
-        let actionsheet = UIAlertController(title: "Form Complete.", message: "Do you want to send this info?", preferredStyle: .actionSheet)
+        let sendInfo = UIAlertAction(title: "Send Follow-Up Info",
+                                     style: UIAlertAction.Style.default,
+                                     handler: {(alertAction: UIAlertAction) in
+                                        self.selectedAction.text = "Thank you we will Send information about \(String(describing: self.favoriteLanguage))"
+        })
         
-                present(actionsheet, animated: true, completion: nil)
+        let noInfo = UIAlertAction(title: "Do not Send information",
+                                   style: UIAlertAction.Style.default,
+                                   handler: {(alertAction: UIAlertAction) in
+                                    self.selectedAction.text = "We wil not send any information about \(String(describing: self.favoriteLanguage))"
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: UIAlertAction.Style.cancel,
+                                         handler: {(alertAction: UIAlertAction) in
+                                            self.selectedAction.text="Pressed Cancel"
+        })
+        
+        alertController.addAction(sendInfo)
+        alertController.addAction(noInfo)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
