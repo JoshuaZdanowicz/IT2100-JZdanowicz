@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func showAltertWithFields(_ sender: Any) {
+        NSLog("in show alert with fields")
         let alert = UIAlertController(title: "Enter Name and Email",
                                       message: "Using textFilds for input",
                                       preferredStyle: UIAlertController.Style.alert)
@@ -44,6 +45,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlertWithOptions(_ sender: Any) {
+        NSLog("in show alert with options")
+
         let alertController = UIAlertController(title: "Select Your Favorite Language",
                                                 message: "Pick One!",
                                                 preferredStyle: UIAlertController.Style.alert)
@@ -52,20 +55,20 @@ class ViewController: UIViewController {
                                    style: UIAlertAction.Style.default,
                                    handler: {(alertAction: UIAlertAction) in
                                     //let favoriteLanguage = "C#"
-                                    self.favoriteLanguage.text="Selected C#"
+                                    self.favoriteLanguage.text!="C#"
         })
         let Java = UIAlertAction(title: "Java",
                                  style: UIAlertAction.Style.default,
                                  handler: {(alertAction: UIAlertAction) in
                                     //let favoriteLanguage = "Java"
-                                    self.favoriteLanguage.text="Selected Java"
+                                    self.favoriteLanguage.text!="Java"
         })
         
         let Swift = UIAlertAction(title: "Swift",
                                   style: UIAlertAction.Style.default,
                                   handler: {(alertAction: UIAlertAction) in
-                                    //let favoriteLanguage = "Swift"
-                                    self.favoriteLanguage.text="Selected Swift"
+                                    _ = "Swift"
+                                    self.favoriteLanguage.text!="Swift"
         })
         
         alertController.addAction(cSharp)
@@ -76,6 +79,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showActionSheet(_ sender: Any) {
+         NSLog("in show action sheet")
+
         let alertController = UIAlertController(title: "Available Actions",
                                                 message: "Choose something from this list",
                                                 preferredStyle: UIAlertController.Style.actionSheet)
@@ -83,13 +88,13 @@ class ViewController: UIViewController {
         let sendInfo = UIAlertAction(title: "Send Follow-Up Info",
                                      style: UIAlertAction.Style.default,
                                      handler: {(alertAction: UIAlertAction) in
-                                        self.selectedAction.text = "Thank you we will Send information about \(String(describing: self.favoriteLanguage))"
+                                        self.selectedAction.text = "Thank you we will Send information about \(String(describing: self.favoriteLanguage.text!))"
         })
         
         let noInfo = UIAlertAction(title: "Do not Send information",
                                    style: UIAlertAction.Style.default,
                                    handler: {(alertAction: UIAlertAction) in
-                                    self.selectedAction.text = "We wil not send any information about \(String(describing: self.favoriteLanguage))"
+                                    self.selectedAction.text = "We wil not send any information about \(String(describing: self.favoriteLanguage.text!))"
         })
         
         let cancelAction = UIAlertAction(title: "Cancel",
@@ -113,4 +118,5 @@ class ViewController: UIViewController {
     
     
 }
+
 
