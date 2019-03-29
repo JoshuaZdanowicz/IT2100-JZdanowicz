@@ -9,9 +9,15 @@
 import UIKit
 
 class Scene2ViewController: UIViewController {
-
+    
+    @IBOutlet weak var helloName: UILabel!
+    
+    var finalName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        helloName.text = "hello, " + finalName
 
         // Do any additional setup after loading the view.
     }
