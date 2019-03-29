@@ -185,4 +185,4 @@ print(concatAll(names: ["Jim", "Matt", "Josh", "Jess"], starter: "Combined"))
 middle section as is pasting it into this file. I decided not to over think the last section like I did the middle, hopefully I did it 
 properly. 
 
-
+ */
