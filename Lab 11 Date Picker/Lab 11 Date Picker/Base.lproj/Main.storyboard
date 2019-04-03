@@ -19,32 +19,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Date Selected" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHf-On-xuL">
-                                <rect key="frame" x="128" y="244" width="158" height="26"/>
+                                <rect key="frame" x="20" y="244" width="374" height="313"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afi-V3-Tjz">
+                                <rect key="frame" x="149" y="783" width="116" height="30"/>
+                                <state key="normal" title="Choose a Date"/>
+                                <connections>
+                                    <segue destination="bmo-on-hJ8" kind="popoverPresentation" popoverAnchorView="Afi-V3-Tjz" id="L9B-P7-MFV">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vHf-On-xuL" secondAttribute="bottom" constant="543" id="WvK-nT-wjK"/>
-                            <constraint firstItem="vHf-On-xuL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="cZh-8n-L8k"/>
+                            <constraint firstItem="Afi-V3-Tjz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3Wu-Qb-1F6"/>
+                            <constraint firstItem="Afi-V3-Tjz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BTA-r5-x5R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vHf-On-xuL" secondAttribute="bottom" constant="256" id="WvK-nT-wjK"/>
+                            <constraint firstItem="vHf-On-xuL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cZh-8n-L8k"/>
+                            <constraint firstItem="Afi-V3-Tjz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="g0s-Pk-ZNp"/>
                             <constraint firstItem="vHf-On-xuL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szs-1t-Tnh"/>
                             <constraint firstItem="vHf-On-xuL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="ySI-tX-jMO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="EgQ-VL-Rnn"/>
-                        <barButtonItem title="Choose a Date" id="ZkI-9r-m4P">
-                            <connections>
-                                <segue destination="bmo-on-hJ8" kind="popoverPresentation" popoverAnchorBarButtonItem="ZkI-9r-m4P" id="w2c-5i-R7b">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="edu-qa-20c"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ouputLabel" destination="vHf-On-xuL" id="VgE-Gq-GK1"/>
@@ -52,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="-42"/>
+            <point key="canvasLocation" x="34.782608695652179" y="-42.1875"/>
         </scene>
         <!--Date Chooser-->
         <scene sceneID="qdc-le-sQK">
@@ -71,15 +73,6 @@
                                     <action selector="setDateTime:" destination="bmo-on-hJ8" eventType="valueChanged" id="1MF-o2-zXs"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Pick a Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9J-Yi-A7x">
-                                <rect key="frame" x="124" y="255" width="166" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="y5N-vN-hFw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiK-dJ-6cP">
                                 <rect key="frame" x="177" y="783" width="60" height="30"/>
                                 <state key="normal" title="Done"/>
@@ -87,15 +80,24 @@
                                     <action selector="dismissDateChooser:" destination="bmo-on-hJ8" eventType="touchUpInside" id="dp7-QK-bCz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Pick a Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9J-Yi-A7x">
+                                <rect key="frame" x="69" y="255" width="242" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="y5N-vN-hFw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="w9J-Yi-A7x" firstAttribute="centerX" secondItem="tDA-Lc-6kh" secondAttribute="centerX" id="22z-ZM-y4C"/>
+                            <constraint firstItem="w9J-Yi-A7x" firstAttribute="centerX" secondItem="tDA-Lc-6kh" secondAttribute="centerX" constant="-17" id="22z-ZM-y4C"/>
                             <constraint firstItem="FiK-dJ-6cP" firstAttribute="centerX" secondItem="tDA-Lc-6kh" secondAttribute="centerX" id="81A-MT-1jY"/>
-                            <constraint firstItem="w9J-Yi-A7x" firstAttribute="leading" secondItem="PVK-ge-1LT" secondAttribute="leading" constant="124" id="8bQ-tn-FPq"/>
-                            <constraint firstItem="lyD-Te-daN" firstAttribute="top" secondItem="w9J-Yi-A7x" secondAttribute="bottom" constant="8" symbolic="YES" id="IpU-dF-c83"/>
+                            <constraint firstItem="w9J-Yi-A7x" firstAttribute="leading" secondItem="PVK-ge-1LT" secondAttribute="leading" constant="69" id="8bQ-tn-FPq"/>
+                            <constraint firstItem="lyD-Te-daN" firstAttribute="top" secondItem="w9J-Yi-A7x" secondAttribute="bottom" constant="-42" id="IpU-dF-c83"/>
                             <constraint firstItem="FiK-dJ-6cP" firstAttribute="bottom" secondItem="PVK-ge-1LT" secondAttribute="bottom" id="YNl-lA-hiS"/>
-                            <constraint firstItem="w9J-Yi-A7x" firstAttribute="centerX" secondItem="lyD-Te-daN" secondAttribute="centerX" id="ddf-T2-aWj"/>
+                            <constraint firstItem="w9J-Yi-A7x" firstAttribute="centerX" secondItem="lyD-Te-daN" secondAttribute="centerX" constant="-17" id="ddf-T2-aWj"/>
                             <constraint firstItem="FiK-dJ-6cP" firstAttribute="leading" secondItem="PVK-ge-1LT" secondAttribute="leading" constant="177" id="pHG-gm-zcg"/>
                             <constraint firstItem="w9J-Yi-A7x" firstAttribute="top" secondItem="PVK-ge-1LT" secondAttribute="top" constant="211" id="xfr-qt-KDB"/>
                         </constraints>
@@ -106,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijK-5b-ltb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="655" y="-42"/>
+            <point key="canvasLocation" x="653.62318840579712" y="-42.1875"/>
         </scene>
     </scenes>
 </document>
