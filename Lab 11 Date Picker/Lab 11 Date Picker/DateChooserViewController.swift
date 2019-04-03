@@ -23,7 +23,7 @@ class DateChooserViewController: UIViewController {
     @IBAction func setDateTime(_ sender: UIDatePicker) {
         
         (presentingViewController as! ViewController).calculateDateDifference(
-            (sender as! UIDatePicker).date)
+            chosenDate: (sender ).date as NSDate)
     }
     
     @IBAction func dismissDateChooser(_ sender: UIButton) {
@@ -32,9 +32,11 @@ class DateChooserViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        (presentingViewController as! ViewController).calculateDateDifference(NSDate())
+        (presentingViewController as! ViewController).calculateDateDifference(chosenDate: NSDate())
+}
+
     
-    
+
 
     
 
@@ -50,4 +52,4 @@ class DateChooserViewController: UIViewController {
 
     }
     
-}
+

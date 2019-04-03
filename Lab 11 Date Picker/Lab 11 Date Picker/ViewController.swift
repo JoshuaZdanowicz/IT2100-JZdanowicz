@@ -14,24 +14,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
+        }
+    func calculateDateDifference(chosenDate: NSDate) {
+        let todaysDate: NSDate = NSDate()
+        let difference: TimeInterval =
+            todaysDate.timeIntervalSince(chosenDate as Date) / 86400
+        
+        let dateFormat: DateFormatter = DateFormatter()
+        dateFormat.dateFormat = "MMMM d, yyyy hh:mm:ssa"
+        
+        let todaysDateString: String = dateFormat.string(from: todaysDate as Date)
+        let chosenDateString: String = dateFormat.string(from: chosenDate as Date)
+        
+        let differenceOutput: String = NSString(format:
+            "Difference between chosen date (%@) and today (%@) in days: %1.2f",
+                                                chosenDateString, todaysDateString, fabs(difference)) as String
+        
+        ouputLabel.text=differenceOutput
     }
 
 
-}
-func calculateDateDifference(chosenDate: NSDate) {
-      let todaysDate: NSDate = NSDate()
-    let difference: TimeInterval =
-        todaysDate.timeIntervalSince(chosenDate as Date) / 86400
 
-    let dateFormat: DateFormatter = DateFormatter()
-           dateFormat.dateFormat = "MMMM d, yyyy hh:mm:ssa"
-    
-    let todaysDateString: String = dateFormat.string(from: todaysDate as Date)
-    let chosenDateString: String = dateFormat.string(from: chosenDate as Date)
-    
-      let differenceOutput: String = NSString(format:
-               "Difference between chosen date (%@) and today (%@) in days: %1.2f",
-                 chosenDateString, todaysDateString, fabs(difference)) as String
-    
-        outputLabel.text=differenceOutput
+
 }
