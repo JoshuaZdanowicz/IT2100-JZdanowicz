@@ -9,7 +9,17 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    @IBOutlet weak var inputAddress1: UITextField!
+    @IBOutlet weak var inputAddress2: UITextField!
+    @IBOutlet weak var inputCity: UITextField!
+    @IBOutlet weak var inputState: UITextField!
+    @IBOutlet weak var inputZip: UITextField!
+    @IBOutlet weak var inputEmail: UITextField!
+    
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

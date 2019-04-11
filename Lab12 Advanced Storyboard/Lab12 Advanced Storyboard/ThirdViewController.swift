@@ -9,7 +9,23 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
+    @IBOutlet weak var outputFirstName: UILabel!
+    @IBOutlet weak var outputMiddleName: UILabel!
+    @IBOutlet weak var outputLastName: UILabel!
+    @IBOutlet weak var outputAddress1: UILabel!
+    @IBOutlet weak var outputAddress2: UILabel!
+    @IBOutlet weak var outputCity: UILabel!
+    @IBOutlet weak var outputState: UILabel!
+    @IBOutlet weak var outputZip: UILabel!
+    @IBOutlet weak var outputEmail: UILabel!
 
+
+
+    
+    
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

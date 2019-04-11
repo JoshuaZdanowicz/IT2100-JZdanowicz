@@ -18,6 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TV3-Ky-Ilw">
+                                <rect key="frame" x="39" y="242" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Middle Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHY-iS-srZ">
                                 <rect key="frame" x="39" y="341" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -53,13 +60,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TV3-Ky-Ilw">
-                                <rect key="frame" x="39" y="242" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Personal Information" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6g0-Qy-EAw">
                                 <rect key="frame" x="20" y="98" width="387" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,15 +68,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOM-3e-pIg">
+                                <rect key="frame" x="181" y="681" width="54" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="inputFirst" destination="p7N-6K-LhE" id="Kb4-CG-wRu"/>
+                        <outlet property="inputLast" destination="Fts-A2-efN" id="IyR-HB-Hrs"/>
+                        <outlet property="inputMiddle" destination="BIH-Tx-eih" id="Gaj-ft-q9i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-483" y="-261"/>
+            <point key="canvasLocation" x="72" y="-288"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -183,6 +194,14 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="inputAddress1" destination="n3p-i5-S10" id="2pj-wS-ymz"/>
+                        <outlet property="inputAddress2" destination="zET-lI-QKT" id="qxj-Ss-CGA"/>
+                        <outlet property="inputCity" destination="oeH-uw-vtx" id="hUS-4m-37e"/>
+                        <outlet property="inputEmail" destination="X8C-1V-kn2" id="cU1-vD-itC"/>
+                        <outlet property="inputState" destination="Ec1-oZ-U5x" id="wJq-r1-FjE"/>
+                        <outlet property="inputZip" destination="9nq-78-Hg4" id="h64-Lx-O1J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,7 +210,7 @@
         <!--Third-->
         <scene sceneID="TEj-A4-Oet">
             <objects>
-                <viewController id="5et-ZN-wcq" sceneMemberID="viewController">
+                <viewController id="5et-ZN-wcq" customClass="ThirdViewController" customModule="Lab12_Advanced_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jDi-In-uPh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,6 +312,17 @@
                         <viewLayoutGuide key="safeArea" id="es1-G5-6Do"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Third" id="FOW-4y-A4X"/>
+                    <connections>
+                        <outlet property="outputAddress1" destination="WSU-eu-oUg" id="aP7-3d-R6f"/>
+                        <outlet property="outputAddress2" destination="9c5-kV-qFY" id="We1-ny-MVM"/>
+                        <outlet property="outputCity" destination="IbF-8Q-gAx" id="Jhy-h6-glc"/>
+                        <outlet property="outputEmail" destination="Ae6-yT-YwT" id="V53-IH-O1O"/>
+                        <outlet property="outputFirstName" destination="gnx-Fj-Ucv" id="EZo-98-84I"/>
+                        <outlet property="outputLastName" destination="emJ-7e-G0F" id="m2D-kf-v2M"/>
+                        <outlet property="outputMiddleName" destination="tjg-VY-HPk" id="Kjj-al-svG"/>
+                        <outlet property="outputState" destination="CvO-GK-r9d" id="TcJ-9M-Mzf"/>
+                        <outlet property="outputZip" destination="7dM-Be-cca" id="4bj-Xl-CLt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGS-Me-XYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -315,7 +345,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="-261"/>
+            <point key="canvasLocation" x="749" y="-288"/>
         </scene>
     </scenes>
     <resources>
