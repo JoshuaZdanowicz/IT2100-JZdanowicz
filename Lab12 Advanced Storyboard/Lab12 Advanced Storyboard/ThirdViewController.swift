@@ -23,11 +23,16 @@ class ThirdViewController: UIViewController {
 
     
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        var tabBarParent = self.tabBarController as! PersonInfoTabBarController
+        outputFirstName.text = tabBarParent.firstName
+    }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }

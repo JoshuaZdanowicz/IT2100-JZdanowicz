@@ -13,7 +13,13 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var inputMiddle: UITextField!
     @IBOutlet weak var inputLast: UITextField!
 
-
+    @IBAction func clickSave(_ sender: Any) {
+        //(parent as! PersonInfoTabBarController).firstName = inputFirst.text ?? ""
+           var tabBarParent = self.tabBarController as! PersonInfoTabBarController
+        tabBarParent.firstName = inputFirst.text ?? ""
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
