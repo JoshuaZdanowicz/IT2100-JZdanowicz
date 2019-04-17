@@ -24,8 +24,29 @@ class ThirdViewController: UIViewController {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        var tabBarParent = self.tabBarController as! PersonInfoTabBarController
+        let tabBarParent = self.tabBarController as! PersonInfoTabBarController
         outputFirstName.text = tabBarParent.firstName
+        let tabBarParent2 = self.tabBarController as! PersonInfoTabBarController
+        outputMiddleName.text = tabBarParent2.middleName
+        let tabBarParent3 = self.tabBarController as! PersonInfoTabBarController
+    outputLastName.text = tabBarParent3.lastName
+        let tabBarParent4 = self.tabBarController as! PersonInfoTabBarController
+        outputAddress1.text = tabBarParent4.addr1
+        let tabBarParent5 = self.tabBarController as! PersonInfoTabBarController
+        outputAddress2.text = tabBarParent5.addr2
+        let tabBarParent6 = self.tabBarController as! PersonInfoTabBarController
+        outputCity.text = tabBarParent6.city
+        let tabBarParent7 = self.tabBarController as! PersonInfoTabBarController
+        outputState.text = tabBarParent7.state
+        let tabBarParent8 = self.tabBarController as! PersonInfoTabBarController
+        outputZip.text = tabBarParent8.zip
+        let tabBarParent9 = self.tabBarController as! PersonInfoTabBarController
+        outputEmail.text = tabBarParent9.email
+        
+        
+        
+        
+        
     }
 
     

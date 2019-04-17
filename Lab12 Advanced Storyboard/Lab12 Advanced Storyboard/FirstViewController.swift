@@ -15,8 +15,14 @@ class FirstViewController: UIViewController {
 
     @IBAction func clickSave(_ sender: Any) {
         //(parent as! PersonInfoTabBarController).firstName = inputFirst.text ?? ""
-           var tabBarParent = self.tabBarController as! PersonInfoTabBarController
+        let tabBarParent = self.tabBarController as! PersonInfoTabBarController
         tabBarParent.firstName = inputFirst.text ?? ""
+        
+        let tabBarParent2 = self.tabBarController as! PersonInfoTabBarController
+        tabBarParent2.middleName = inputMiddle.text ?? ""
+        
+        let tabBarParent3 = self.tabBarController as! PersonInfoTabBarController
+        tabBarParent3.lastName = inputLast.text ?? ""
         
     }
     
