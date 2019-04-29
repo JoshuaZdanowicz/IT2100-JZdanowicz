@@ -22,6 +22,7 @@
 		434EB629227668E50086C4E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434EB62C227668E50086C4E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434EB62E227668E50086C4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		434EB6382276BA200086C4E2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 		434EB616227668E30086C4E2 = {
 			isa = PBXGroup;
 			children = (
+				434EB6382276BA200086C4E2 /* README.md */,
 				434EB621227668E30086C4E2 /* Lab 14 Reading and Writing Data */,
 				434EB620227668E30086C4E2 /* Products */,
 			);
